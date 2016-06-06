@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>ТехноМарт</title>
+<!--
+  <link href="" rel="stylesheet">
+  <link href="" rel="stylesheet">
+-->
+</head>
+<body>
+  <header>
+    
+    <!-- шапка сайта, лого-заголовок H1 +форма   -->
+    
+    <div class="top-header">
+    <h2 class="logo-"><a class="logo-header">Техномарт</a></h2>
+    <form action="#" method="get">
+      <input type="text" name="search" class="search-input" id="search" placeholder="Поиск:">
+      <label for="search" class="search-label"></label>
+      </form>
+      
+      <!--  Закладки, Корзина, Оформление заказа   -->
+      
+      <div class="bookmart"><a href="#">Закладки</a></div>
+      <div class="basket"><a href="#">Корзина</a></div>
+      <div class="order"><a href="#">Оформить заказ</a></div>
+    </div>
+    <div class="main-header">
+      
+      <!--  Контактная информация шапки  -->
+      
+      <div class="description"><p>Интернет-магазин строительных материалов и инструментов для ремонта</p></div>
+      <div class="contact-info">
+        <span class="number-phone"><span class="icon-phone"></span> +7 (812) 555-05-55</span>
+        <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </div>
+      <div class="user-block">
+        <div class="user-name-block">
+          <a href="#" class="user-name">Равшан Джамшутович</a>
+          <a class="user-btn"></a>
+          <ul>
+            <li class="my-orders"><a href="#">Мои заказы</a></li>
+            <li class="private-office"><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <a href="#" class="login"><span class="login-logo"></span>Войти</a>
+        <a href="#" class="registration">Регистрация</a>
+      </div>
+      
+      <!--  Навигация сайта    -->
+      
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Главаня</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    
+     <!--  ФИЛЬТР КАТАЛОГОВОЙ СТРАНИЦЫ  -->
+    
+    <aside class="filter-block">
+      
+      <!--  ХЛЕБНЫЕ КРОШКИ    -->
+      
+      <div class="bread-crumbs">
+        <ul>
+          <li><a href="#"></a></li><!-- ИКОНКА ДОМОЙ  -->
+          <li><a href="#">КАТАЛОГ</a></li>
+          <li><a href="#">ИНСТРУМЕНТ</a></li>
+          <li><a href="#">ПЕРФАРАТОРЫ</a></li>
+        </ul>
+      </div>
+      
+          <!--  ЗАГОЛОВОК СТРАНиЦЫ   -->
+      
+      <div class="title-catalog">
+        ПЕРФАРАТОРЫ
+      </div>
+      
+            <!--  ФИЛЬТР  -->
+      
+      <form action="#" method="post"> 
+          <section class="price">
+            <div class="column-header">ФИЛЬТР:</div>
+            <h3>ЦЕНА:</h3>
+            
+            <!--     ФИЛЬТР ПОЛЗУНОК       -->
+            
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"> </div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input name="min-price" type="text" value="0">
+                </label>
+                <label class="max-price">
+                  <input name="max-price" type="text" value="30000">
+                </label>
+              </div>
+            </div>
+          </section>
+      
+       <!--ПЕРЕКЛЮЧАТЕЛЬ: Checkbox-->
+        
+          <section class="manufacturers">
+            <h3>ПРОИЗВОДИТЕЛИ:</h3>
+            <input type="checkbox" id="bosh" name="BOSCH" checked>
+            <label for="bosh">BOSCH</label>
+            <input type="checkbox" id="interskol" name="interskol">
+            <label for="interskol">ИНТЕРСКОЛ</label>
+            <input type="checkbox" id="makita" name="makita" checked>
+            <label for="makita">MAKITA</label>
+            <input type="checkbox" id="dewalt" name="dewalt" disabled>
+            <label for="dewalt">DEWALT</label>
+            <input type="checkbox" id="hitachi" name="hitachi">
+            <label for="hitachi">HITACHI</label>
+          </section>
+          
+        
+      
+          <!--  ПЕРЕКЛЮЧАТЕЛЬ: Radio    -->
+      
+          <section class="batteries">
+            <h3>ПИТАНИЕ:</h3>
+            <input type="radio" id="accumulator" name="accumulator" checked>
+            <label for="accumulator">АККУМУЛЯТОРНЫЕ</label>
+            <input type="radio" id="net" name="net" disabled>
+            <label for="net">СЕТЕВЫЕ</label>
+          </section>
+        
+        <button type="submit" class="btn-show">Показать</button>
+        
+      </form>
+    </aside>
+    
+  </main>
+  
+    <!--   ФУТЕР САЙТА    -->
+  
+  <footer class="main-footer">
+    
+    <!--  ШАПКА ФУТЕРА + НАВИГАЦИЯ  -->
+    
+    <header>
+      <h2>ТЕХНОМАРТ</h2>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!--  АДРЕС И НАВИГАЦИЯ ПО УСЛУГАМ  -->
+    
+      <aside>
+        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          +7 (812) 555-05-55</span>
+        <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+        </nav>
+      </aside>
+    
+        <!-- АВТОРСКИЕ ПРАВА, СОЦИАЛЬНЫЕ СЕТИ, ОБРАТНАЯ СВЯЗЬ   -->
+    
+    <footer class="footer-copyright">
+      <p class="since-copyright">© 2010–2015 Компания «Техномарт»
+        Все права защищены</p>
+      <div class="social">
+        <a class="social-btn" href="https://vk.com/"><span class="icon-vk"></span>ВКонтакте</a>
+        <a class="social-btn" href="https://www.facebook.com/"><span class="icon-facebook"></span>Фейсбук</a>
+        <a class="social-btn" href="https://www.instagram.com/"><span class="icon-instagramm"></span>Инстаграм</a>
+      </div>
+      <div class="connection-back">
+				<p>Обратная связь:
+					<br>
+					<a href="#">mail@htmlacademy.ru</a>
+				</p>
+				<p>Разработано-
+					<br>
+					<a href="#">htmlacademy.ru</a>
+				</p>
+			</div>
+    </footer>
+  </footer>
+</body> 
+</html>
