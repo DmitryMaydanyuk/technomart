@@ -7,27 +7,32 @@
   <link href="" rel="stylesheet">
   <link href="" rel="stylesheet">
 -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
     
     <!-- шапка сайта, лого-заголовок H1 +форма   -->
-    
-    <div class="top-header">
-    <h2 class="logo-"><a class="logo-header">Техномарт</a></h2>
+    <nav class="nav-top-bar">
+      
+    <div class="top-header container otl-2">
+    <h2 class="logo logo-header"><a href="#">Техномарт</a></h2>
     <form action="#" method="get">
       <input type="text" name="search" class="search-input" id="search" placeholder="Поиск:">
-      <label for="search" class="search-label"></label>
+      <label for="search" class="search-label otl"></label>
       </form>
       
       <!--  Закладки, Корзина, Оформление заказа   -->
       
-      <div class="bookmart"><a href="#">Закладки</a></div>
-      <div class="basket"><a href="#">Корзина</a></div>
-      <div class="order"><a href="#">Оформить заказ</a></div>
+      <ul class="order">
+        <li class="bookmart otl"><a href="#">Закладки</a></li>
+        <li class="basket otl"><a href="#">Корзина</a></li>
+      </ul>  
+      <a href="#"  class="make-order">Оформить заказ</a>
     </div>
     <div class="main-header">
       
+    </nav>  
       <!--  Контактная информация шапки  -->
       
       <div class="description"><p>Интернет-магазин строительных материалов и инструментов для ремонта</p></div>

@@ -1,0 +1,113 @@
+body {
+  
+}
+
+.otl {
+  outline: 2px solid red;
+}
+
+.otl-2 {
+  outline: 2px solid green;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  
+.nav-top-bar {
+  min-height: 42px;
+  background-color: #293449;
+  color: #fff;
+}
+
+
+.logo-header {
+  width: 220px;
+  height: 42px;
+  background: #ee3643;
+  float: left;
+  display: block;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 5px 0 0 #b52933;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-header a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 43px;
+}
+
+
+
+.search-label {
+    position: absolute;
+    left: 428px;
+    top: 10px;
+    width: 270px;
+    height: 43px;
+}
+
+.search-input {
+    position: relative;
+    margin-left: 47px;
+    margin-top: 10px;
+    z-index: 5;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
+    font-size: 17px;
+    border: none;
+    width: 200px;
+    background-color: #293449;
+    color: #ffffff;
+    outline: none;
+}
+
+.order li {
+  display: inline-block;
+  list-style: none;
+  width: 106px;
+}
+
+.order a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bookmart {
+  position: absolute;
+  top: 10px;
+  right: 540px;
+  font-size: 17px;
+  line-height: 43px;
+  vertical-align: middle;
+}
+
+.basket {
+  position: absolute;
+  top: 10px;
+  right: 420px;
+  font-size: 17px;
+  line-height: 43px;
+  vertical-align: middle;
+}
+
+.make-order {
+  text-decoration: none;
+  color: #fff;
+   position: absolute;
+  top: 10px;
+  right: 300px;
+  
+}
