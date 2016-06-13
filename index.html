@@ -10,44 +10,55 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header">
     
     <!-- шапка сайта, лого-заголовок H1 +форма   -->
+    
     <nav class="nav-top-bar">
       
-    <div class="top-header container otl-2">
-    <h2 class="logo logo-header"><a href="#">Техномарт</a></h2>
+    <div class="top-header container">
+      
+    <h1 class="logo logo-header"><a href="#">Техномарт</a></h1>
+<!--
     <form action="#" method="get">
-      <input type="text" name="search" class="search-input" id="search" placeholder="Поиск:">
-      <label for="search" class="search-label otl"></label>
+      <input type="text" name="search" class="search-input otl-3" id="search" placeholder="Поиск:">
+      <label for="search" class="search-label otl-2"></label>
       </form>
+-->
       
       <!--  Закладки, Корзина, Оформление заказа   -->
       
       <ul class="order">
-        <li class="bookmart otl"><a href="#">Закладки</a></li>
-        <li class="basket otl"><a href="#">Корзина</a></li>
+        <li class="bookmart"><a href="#">Закладки</a></li>
+        <li class="basket"><a href="#">Корзина</a></li>
+        <li  class="make-order"><a href="#" >Оформить заказ</a></li>
       </ul>  
-      <a href="#"  class="make-order">Оформить заказ</a>
+      
     </div>
-    <div class="main-header">
-      
     </nav>  
+    
       <!--  Контактная информация шапки  -->
+    
+    <div class="main-header clearfix">
       
-      <div class="description"><p>Интернет-магазин строительных материалов и инструментов для ремонта</p></div>
-      <div class="contact-info">
-        <span class="number-phone"><span class="icon-phone"></span> +7 (812) 555-05-55</span>
+    <div class="sections-info-header container">
+      
+      <section class="description"><p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p></section>
+      
+      <section class="contact-info">
+        <span class="number-phone"><span class="icon-phone"></span><a href="#">+7 (812) 555-05-55</a></span>
         <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-      </div>
-      <div class="user-block">
+      </section>
+      
+      <section class="user-block">
         <a href="#" class="login"><span class="login-logo"></span>Войти</a>
         <a href="#" class="registration">Регистрация</a>
-      </div>
+      </section>
       
+    </div>
       <!--  Навигация сайта    -->
       
-      <nav class="main-navigation">
+      <nav class="main-navigation clearfix container">
         <ul>
           <li><a href="#">Главаня</a></li>
           <li><a href="#">Компания</a></li>
@@ -58,7 +69,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
+      
     </div>
+    
   </header>
   <main>
     
@@ -233,7 +246,7 @@ BFG 9000">
     
     <article class="about-us">
       <section class="info-about-us">
-        <h1>КОМПАНИЯ «ТЕХНОМАРТ»</h1>
+        <h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
           строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! 

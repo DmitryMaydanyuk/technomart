@@ -1,13 +1,31 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  
+  font-family: "PT Sans", "Arial Narrow", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    background: #ffffff;
+    min-width: 960px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .otl {
-  outline: 2px solid red;
+  outline: 3px solid red;
 }
 
 .otl-2 {
-  outline: 2px solid green;
+  outline: 3px solid green;
+}
+
+.otl-3 {
+  outline: 3px solid orange;
 }
 
 .container {
@@ -22,92 +40,221 @@ body {
     clear: both;
   }
   
-.nav-top-bar {
-  min-height: 42px;
+ /*шапка сайта, лого-заголовок H1 +форма */
+
+.header {
+  background-color: #f2f6f8;
+}
+
+.nav-top-bar {   
+  min-height: 42px;     
   background-color: #293449;
   color: #fff;
 }
 
-
 .logo-header {
-  width: 220px;
-  height: 42px;
-  background: #ee3643;
-  float: left;
-  display: block;
-  line-height: 24px;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-  box-shadow: 0 5px 0 0 #b52933;
-  margin: 0;
-  padding: 0;
+    float: left;
+    line-height: 43px;
 }
+
+.logo{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 220px;
+    height: 42px;
+    text-align: center;
+    box-shadow: 0 5px 0 0 #b52933;
+    font-family: "Cuprum", "Arial Narrow", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ee3643;
+}
+
 
 .logo-header a {
   text-decoration: none;
   color: #fff;
-  line-height: 43px;
+  line-height: 42px;
 }
 
 
-
+/*
 .search-label {
     position: absolute;
-    left: 428px;
-    top: 10px;
+    left: 0;
+    top: 0;
     width: 270px;
     height: 43px;
 }
 
 .search-input {
     position: relative;
-    margin-left: 47px;
+    margin-left: 25px;
     margin-top: 10px;
     z-index: 5;
     font-family: "Cuprum", "Arial Narrow", sans-serif;
     font-size: 17px;
     border: none;
-    width: 200px;
+    width: 180px;
     background-color: #293449;
     color: #ffffff;
     outline: none;
+}
+*/
+
+/*Закладки, Корзина, Оформление заказа*/
+
+.order {
+  float: right;
+  padding: 0;
+  margin: 0;
 }
 
 .order li {
   display: inline-block;
   list-style: none;
-  width: 106px;
+  width: 160px;
 }
 
 .order a {
   text-decoration: none;
   color: #fff;
+  display: block;
+  padding-left: 25px;
 }
 
 .bookmart {
-  position: absolute;
-  top: 10px;
-  right: 540px;
   font-size: 17px;
   line-height: 43px;
   vertical-align: middle;
+  
 }
 
 .basket {
-  position: absolute;
-  top: 10px;
-  right: 420px;
+  font-size: 17px;
+  line-height: 43px;
+  vertical-align: middle;
+  padding-left: 18px;
+}
+
+.make-order {
   font-size: 17px;
   line-height: 43px;
   vertical-align: middle;
 }
 
-.make-order {
-  text-decoration: none;
-  color: #fff;
-   position: absolute;
-  top: 10px;
-  right: 300px;
+/*Контактная информация шапки */
+
+.main-header {
+  width: 100%;
+/*  background: #f1f5f7;*/
+  min-height: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  display: block;
+  width: 300px;
+  min-height: 100px;
+  float: left;
+  margin: 45px 0 45px 0;
   
 }
+
+.description p {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.contact-info {
+  display: block;
+  width: 300px;
+  min-height: 100px;
+  float: left;
+  margin: 55px 0 45px 20px;
+}
+
+.number-phone a {
+  display: block;
+  border: 3px solid #fff;
+  width: 270px;
+  height: 39px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 21px;
+  line-height: 39px;
+  color: #e9292a;
+  margin-bottom: 10px;
+} 
+
+.adress {
+  font-size: 13px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-block {
+  display: block;
+  width: 300px;
+  min-height: 100px;
+  float: right;
+  margin: 55px 0 45px 0;
+}
+
+.login {
+  display: inline-block;
+  width: 120px;
+  height: 45px;
+  background: #fff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px 0 0;
+}
+
+.registration {
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  background: #fff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+/*Навигация сайта*/
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  background-color: #32425c;
+  list-style: none;
+  margin: -2px;
+  min-height: 55px;
+  padding: 0 27px;
+  box-shadow: 0 5px 0 0 #293449;
+  margin-bottom: 60px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 56px;
+  color: #fff;
+  
+}
+
+.main-navigation li:hover {
+  background: #293449;
+} 
